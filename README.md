@@ -55,9 +55,10 @@ sudo apt update
 
 sudo apt install docker-ce 
 
-goto to ### Step 2: Dockerize the Django Project
+## goto to Step 2: Dockerize the Django Project
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+### Details 
+
 Setting up Django on Ubuntu involves several key steps, from installing Python and setting up a virtual environment to installing Django itself and setting up your project. Here’s a detailed outline to help you through the process:
 
 ### 1. Prepare Your System
