@@ -1,46 +1,63 @@
-### ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+### ++++++++++++++++++++++++++++++++++++++++++++++++
 ### Fast Track
 ## Command Line:
 ## Ubuntu 22.04 LTS Setup
 
-sudo apt update && sudo apt upgrade
-sudo apt install python3 python3-pip
-sudo apt install python3-venv
+sudo apt update && sudo apt upgrade 
 
-mkdir my_django_project
-cd my_django_project
-python3 -m venv myenv
-source myenv/bin/activate
+sudo apt install python3 python3-pip 
 
-pip install django
-django-admin startproject myproject .
-python manage.py migrate
+sudo apt install python3-venv 
 
-python manage.py runserver
-python manage.py createsuperuser
+mkdir my_django_project 
 
-http://127.0.0.1:8000/admin
+cd my_django_project 
 
-hostname -I
-ifconfig
-ALLOWED_HOSTS = ['192.168.x.x', 'localhost', '127.0.0.1']
-python manage.py runserver 0.0.0.0:8000
+python3 -m venv myenv 
 
-http://192.168.x.x:8000
+source myenv/bin/activate 
 
-sudo ufw allow 8000
-sudo ufw restart 
+pip install django 
 
-sudo apt update
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-sudo apt update
-sudo apt install docker-ce
+django-admin startproject myproject . 
+
+python manage.py migrate 
+
+python manage.py runserver 
+
+python manage.py createsuperuser 
+
+http://127.0.0.1:8000/admin 
+
+hostname -I 
+
+ifconfig 
+
+ALLOWED_HOSTS = ['192.168.x.x', 'localhost', '127.0.0.1'] 
+
+python manage.py runserver 0.0.0.0:8000 
+
+http://192.168.x.x:8000 
+
+sudo ufw allow 8000 
+
+sudo ufw restart  
+
+sudo apt update 
+
+sudo apt install apt-transport-https ca-certificates curl software-properties-common 
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - 
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" 
+
+sudo apt update 
+
+sudo apt install docker-ce 
 
 goto to ### Step 2: Dockerize the Django Project
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Setting up Django on Ubuntu involves several key steps, from installing Python and setting up a virtual environment to installing Django itself and setting up your project. Here’s a detailed outline to help you through the process:
 
 ### 1. Prepare Your System
